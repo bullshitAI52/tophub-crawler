@@ -182,7 +182,7 @@ class BaseCrawler(ABC):
         for platform, items in data.items():
             platform_name = self.hot_pages.get(platform, {}).get('name', platform)
             self._log(f"{platform_name}: {len(items)} 个热点")
-            total_items += len(items
+            total_items += len(items)
             
             # 显示前3个热点
             for item in items[:3]:
